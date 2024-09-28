@@ -63,24 +63,33 @@ INSERT INTO Theatre (name, location) VALUES
 -- Inserting into Movie
 INSERT INTO Movie (title, duration, genre) VALUES 
 ('Inception', 148, 'Sci-Fi'),
+('Maharaja', 168, 'Romance'),
 ('The Dark Knight', 152, 'Action');
 
 -- Inserting into Show
 INSERT INTO Show (theatre_id, movie_id, date, time) VALUES 
-(1, 1, '2024-09-30', '18:30:00'),
-(1, 2, '2024-09-30', '21:00:00'),
-(2, 1, '2024-09-30', '20:00:00');
+(1, 1, '2024-04-25', '18:30:00'),
+(1, 2, '2024-04-25', '21:00:00'),
+(2, 1, '2024-04-26', '20:00:00'),
+(2, 2, '2024-04-26', '21:45:00'),
+(2, 3, '2024-04-26', '23:15:00');
 
 -- Inserting into Ticket
 INSERT INTO Ticket (show_id, seat_number, price) VALUES 
 (1, 'A1', 250.00),
 (1, 'A2', 250.00),
-(2, 'B1', 300.00);
+(2, 'B1', 300.00),
+(2, 'B2', 300.00),
+(3, 'C1', 300.00),
+(3, 'C2', 300.00);
 
 -- Inserting into User
 INSERT INTO User (name, email, phone) VALUES 
 ('Dinesh', 'dinesh@example.com', '9876543210'),
-('Rahul', 'rahul@example.com', '9876543211');
+('Somes', 'somes@example.com', '9876543210'),
+('Sarvesh', 'sarvesh@example.com', '9876543210'),
+('Suvedan', 'suvedan@example.com', '9876543210'),
+('Rahul', 'rahul@example.com', '9876543210');
 
 -- Inserting into Booking
 INSERT INTO Booking (user_id, ticket_id, booking_date) VALUES 
